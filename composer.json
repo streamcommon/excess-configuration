@@ -7,7 +7,8 @@
     "streamcommon",
     "object based configuration",
     "object parameter",
-    "zend options"
+    "zend options",
+    "excess configuration"
   ],
   "require": {
     "php": "^7.2",
