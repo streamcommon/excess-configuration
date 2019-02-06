@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Streamcommon\Excess\Configuration\Options;
+namespace Streamcommon\Excess\Configuration;
 
 use Streamcommon\Excess\Configuration\Exception\{InvalidArgumentException};
 use Zend\Stdlib\AbstractOptions;
@@ -19,7 +19,7 @@ use Zend\Stdlib\AbstractOptions;
 /**
  * Class AMQPConfiguration
  *
- * @package Streamcommon\Excess\Configuration\Options
+ * @package Streamcommon\Excess\Configuration
  */
 class AMQPConfiguration extends AbstractOptions
 {

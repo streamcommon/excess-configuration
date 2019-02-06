@@ -11,14 +11,14 @@
 
 declare(strict_types=1);
 
-namespace Streamcommon\Excess\Configuration\Options;
+namespace Streamcommon\Excess\Configuration;
 
 use Zend\Stdlib\AbstractOptions;
 
 /**
  * Class Connection
  *
- * @package Streamcommon\Excess\Configuration\Options
+ * @package Streamcommon\Excess\Configuration
  */
 class Connection extends AbstractOptions
 {

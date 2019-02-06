@@ -11,12 +11,12 @@
 
 declare(strict_types=1);
 
-namespace Streamcommon\Excess\Configuration\Options;
+namespace Streamcommon\Excess\Configuration;
 
 /**
  * Class DbConnection
  *
- * @package Streamcommon\Excess\Configuration\Options
+ * @package Streamcommon\Excess\Configuration
  */
 class DbConnection extends Connection
 {
