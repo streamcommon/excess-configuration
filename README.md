@@ -1,5 +1,7 @@
 # excess-configuration
 
+This package provide default ~~excess~~ object based configuration.
+
 ## Installation
 Console run:
 ```console
