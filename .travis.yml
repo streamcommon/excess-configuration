@@ -14,9 +14,7 @@ install:
   - composer license-check
   - composer phpstan
   - composer phpunit-coverage
-
-after_script:
-  - php ./vendor/bin/php-coveralls -v
+  - composer coveralls
 
 notifications:
   email: false

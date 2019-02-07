@@ -17,5 +17,17 @@ Or add into your `composer.json`:
     }
 ```
 
-## Documentation
-// TODO
+## Example
+```php
+    use Streamcommon\Excess\Configuration\{Credential, Connection};
+
+    $credential = new Credential([
+        'username' => 'user',
+        'password' => 'password',
+    ]);
+    
+    $connection = new Connection([
+        'host' => 'localhost',
+        'port' => 8080
+    ]);
+```

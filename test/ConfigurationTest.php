@@ -14,7 +14,8 @@ declare(strict_types=1);
 namespace StreamCommon\Test\Excess\Configuration;
 
 use PHPUnit\Framework\TestCase;
-use Streamcommon\Excess\Configuration\{Credential, Connection, DbConnection, AMQPConnection};
+use Streamcommon\Excess\Configuration\{Credential, Connection, DbConnection, AMQPConnection, AMQPConfiguration};
+use Streamcommon\Excess\Configuration\Exception\InvalidArgumentException;
 
 /**
  * Class ConfigurationTest
@@ -66,5 +67,45 @@ class ConfigurationTest extends TestCase
         $this->assertEquals('test', $options->getDbName());
         $this->assertEquals('test', $options->getUser());
         $this->assertEquals('test', $options->getPassword());
+    }
+
+    /**
+     * Test AMQPConnection options
+     */
+    public function testAMQPConnectionWithArray(): void
+    {
+        $options = new AMQPConnection([
+            'host' => 'localhost',
+            'port' => 5672,
+            'login' => 'test',
+            'password' => 'test',
+            'vhost' => '/'
+        ]);
+        $this->assertEquals('localhost', $options->getHost());
+        $this->assertEquals(5672, $options->getPort());
+        $this->assertEquals('test', $options->getLogin());
+        $this->assertEquals('test', $options->getPassword());
+        $this->assertEquals('/', $options->getVhost());
+    }
+
+    /**
+     *  Test AMQPConfiguration options
+     */
+    public function testAMQPConfigurationWithArray(): void
+    {
+        $options = new AMQPConfiguration([
+            'queue' => 'queue.1',
+            'exchange' => 'exchange.1',
+            'routing_keys' => [
+                'routing.1'
+            ],
+        ]);
+        $this->assertEquals('queue.1', $options->getQueue());
+        $this->assertEquals('exchange.1', $options->getExchange());
+        $this->assertIsArray($options->getRoutingKeys());
+        $this->assertInstanceOf(AMQPConnection::class, $options->getConnection());
+
+        $this->expectException(InvalidArgumentException::class);
+        $options->setConnection(new AMQPConfiguration());
     }
 }
