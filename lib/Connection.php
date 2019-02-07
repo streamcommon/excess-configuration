@@ -24,7 +24,7 @@ class Connection extends AbstractOptions
 {
     /** @var string|null */
     protected $host;
-    /** @var string|null */
+    /** @var int|null */
     protected $port;
 
     /**
@@ -52,9 +52,9 @@ class Connection extends AbstractOptions
     /**
      * Get port
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getPort(): ?string
+    public function getPort(): ?int
     {
         return $this->port;
     }
@@ -62,10 +62,10 @@ class Connection extends AbstractOptions
     /**
      * Set port
      *
-     * @param string|null $port
+     * @param int|null $port
      * @return Connection
      */
-    public function setPort(?string $port): Connection
+    public function setPort(?int $port): Connection
     {
         $this->port = $port;
         return $this;
