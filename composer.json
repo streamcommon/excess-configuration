@@ -25,6 +25,11 @@
       "Streamcommon\\Excess\\Configuration\\": "lib/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Streamcommon\\Test\\Excess\\Configuration\\": "tests"
+    }
+  },
   "scripts": {
     "cs-check": "phpcs",
     "cs-fix": "phpcbf",
