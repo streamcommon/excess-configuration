@@ -99,6 +99,13 @@ class ConfigurationTest extends TestCase
             'routing_keys' => [
                 'routing.1'
             ],
+            'connection' => [
+                'host' => 'localhost',
+                'port' => 5672,
+                'login' => 'test',
+                'password' => 'test',
+                'vhost' => '/'
+            ],
         ]);
         $this->assertEquals('queue.1', $options->getQueue());
         $this->assertEquals('exchange.1', $options->getExchange());
