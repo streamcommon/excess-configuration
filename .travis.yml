@@ -10,10 +10,14 @@ php:
 
 install:
   - composer install --no-interaction
+
+script:
   - composer cs-check
   - composer license-check
   - composer phpstan
   - composer phpunit-coverage
+
+after_script:
   - composer coveralls
 
 notifications:
