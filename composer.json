@@ -17,7 +17,8 @@
   "require-dev": {
     "streamcommon/coding-standard": "^1.0.0",
     "malukenho/docheader": "^0.1.7",
-    "phpstan/phpstan": "^0.11.1"
+    "phpstan/phpstan": "^0.11.1",
+    "phpunit/phpunit": "^8.0"
   },
   "autoload": {
     "psr-4": {
@@ -28,6 +29,8 @@
     "cs-check": "phpcs",
     "cs-fix": "phpcbf",
     "license-check": "docheader check lib/ test/",
-    "phpstan": "phpstan analyze -l max -c phpstan.neon ./lib"
+    "phpstan": "phpstan analyze -l max -c phpstan.neon ./lib",
+    "phpunit": "phpunit --colors=always",
+    "phpunit-coverage": "phpunit --colors=always --coverage-clover clover.xml"
   }
 }

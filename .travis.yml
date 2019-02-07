@@ -11,6 +11,10 @@ php:
 
 install:
   - composer install --no-interaction
+  - composer cs-check
+  - composer license-check
+  - composer phpstan
+  - composer phpunit-coverage
 
 notifications:
   email: false
