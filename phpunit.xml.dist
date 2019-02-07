@@ -4,7 +4,7 @@
          bootstrap="vendor/autoload.php"
          colors="true">
     <testsuites>
-        <testsuite name="excess-configuration Test Suite">
+        <testsuite name="streamcommon/excess-configuration test suite">
             <directory>./test</directory>
         </testsuite>
     </testsuites>
