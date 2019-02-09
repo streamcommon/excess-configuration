@@ -2674,16 +2674,16 @@
         },
         {
             "name": "streamcommon/coding-standard",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/streamcommon/coding-standard.git",
-                "reference": "ad55c89c636af6d2caa034f17f9931f8de06b04f"
+                "reference": "103ae7990ae8e6b11365f922be7309a1803c8f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/streamcommon/coding-standard/zipball/ad55c89c636af6d2caa034f17f9931f8de06b04f",
-                "reference": "ad55c89c636af6d2caa034f17f9931f8de06b04f",
+                "url": "https://api.github.com/repos/streamcommon/coding-standard/zipball/103ae7990ae8e6b11365f922be7309a1803c8f0e",
+                "reference": "103ae7990ae8e6b11365f922be7309a1803c8f0e",
                 "shasum": ""
             },
             "require": {
@@ -2699,7 +2699,7 @@
                 "Coding Standard",
                 "streamcommon"
             ],
-            "time": "2019-02-05T13:50:03+00:00"
+            "time": "2019-02-09T13:19:39+00:00"
         },
         {
             "name": "symfony/config",

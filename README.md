@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/streamcommon/excess-configuration/badge.svg?branch=master)](https://coveralls.io/github/streamcommon/excess-configuration?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/streamcommon/excess-configuration/v/stable)](https://packagist.org/packages/streamcommon/excess-configuration)
 [![Total Downloads](https://poser.pugx.org/streamcommon/excess-configuration/downloads)](https://packagist.org/packages/streamcommon/excess-configuration)
-[![License](https://poser.pugx.org/streamcommon/excess-configuration/license)](https://packagist.org/packages/streamcommon/excess-configuration)
+[![License](https://poser.pugx.org/streamcommon/excess-configuration/license)](./LICENSE)
 
 This package provide default ~~excess~~ object based configuration.
 
