@@ -1,15 +1,14 @@
 # excess-configuration
-This package provide default ~~excess~~ object based configuration.
-
 [![Latest Stable Version](https://poser.pugx.org/streamcommon/excess-configuration/v/stable)](https://packagist.org/packages/streamcommon/excess-configuration)
 [![Total Downloads](https://poser.pugx.org/streamcommon/excess-configuration/downloads)](https://packagist.org/packages/streamcommon/excess-configuration)
 [![License](https://poser.pugx.org/streamcommon/excess-configuration/license)](./LICENSE)
+
+This package provide default ~~excess~~ object based configuration.
 
 # Branches
 [![Master][Master branch image]][Master branch] [![Build Status][Master image]][Master] [![Coverage Status][Master coverage image]][Master coverage]
 
 [![Develop][Develop branch image]][Develop branch] [![Build Status][Develop image]][Develop] [![Coverage Status][Develop coverage image]][Develop coverage]
-
 
 ## Installation
 Console run:
@@ -22,7 +21,6 @@ Or add into your `composer.json`:
         "streamcommon/excess-configuration": "*"
     }
 ```
-
 ## Example
 ```php
     use Streamcommon\Excess\Configuration\{Credential, Connection};
