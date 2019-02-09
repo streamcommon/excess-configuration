@@ -1,14 +1,15 @@
 # excess-configuration
+This package provide default ~~excess~~ object based configuration.
+
 [![Latest Stable Version](https://poser.pugx.org/streamcommon/excess-configuration/v/stable)](https://packagist.org/packages/streamcommon/excess-configuration)
 [![Total Downloads](https://poser.pugx.org/streamcommon/excess-configuration/downloads)](https://packagist.org/packages/streamcommon/excess-configuration)
 [![License](https://poser.pugx.org/streamcommon/excess-configuration/license)](./LICENSE)
 
-[Master][Master] | [Develop][Develop]
------------- | -------------
-[![Build Status][Master image]][Master] | [![Build Status][Develop image]][Develop]
-[![Coverage Status][Master coverage image]][Master coverage] | [![Coverage Status][Develop coverage image]][Develop coverage]
+# Branches
+[![Master][Master branch image]][Master branch] [![Build Status][Master image]][Master] [![Coverage Status][Master coverage image]][Master coverage]
 
-This package provide default ~~excess~~ object based configuration.
+[![Develop][Develop branch image]][Develop branch] [![Build Status][Develop image]][Develop] [![Coverage Status][Develop coverage image]][Develop coverage]
+
 
 ## Installation
 Console run:
@@ -37,6 +38,10 @@ Or add into your `composer.json`:
     ]);
 ```
 
+[Master branch]: https://github.com/streamcommon/excess-configuration/tree/master
+[Master branch image]: https://img.shields.io/badge/branch-master-blue.svg
+[Develop branch]: https://github.com/streamcommon/excess-configuration/tree/develop
+[Develop branch image]: https://img.shields.io/badge/branch-develop-blue.svg
 [Master image]: https://travis-ci.org/streamcommon/excess-configuration.svg?branch=master
 [Master]: https://travis-ci.org/streamcommon/excess-configuration
 [Master coverage image]: https://coveralls.io/repos/github/streamcommon/excess-configuration/badge.svg?branch=master
