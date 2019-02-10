@@ -28,7 +28,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Streamcommon\\Test\\Excess\\Configuration\\": "tests"
+      "Streamcommon\\Test\\Excess\\Configuration\\": "test/"
     }
   },
   "scripts": {
