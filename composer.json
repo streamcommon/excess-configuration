@@ -35,7 +35,7 @@
     "cs-check": "phpcs",
     "cs-fix": "phpcbf",
     "license-check": "docheader check lib/ test/",
-    "phpstan": "phpstan analyze -l max -c phpstan.neon ./lib",
+    "phpstan": "phpstan analyze -l max ./lib",
     "phpunit": "phpunit --colors=always",
     "phpunit-coverage": "phpunit --colors=always --coverage-clover clover.xml",
     "coveralls": "php-coveralls -v"
