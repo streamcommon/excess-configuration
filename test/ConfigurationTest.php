@@ -1,8 +1,8 @@
 <?php
 /**
- * This file is part of the Common package, a StreamCommon open software project.
+ * This file is part of the streamcommon/excess-configuration package, a StreamCommon open software project.
  *
- * @copyright (c) 2019 StreamCommon Team.
+ * @copyright (c) 2019 StreamCommon Team
  * @see https://github.com/streamcommon/excess-configuration
  *
  * For the full copyright and license information, please view the LICENSE
@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace StreamCommon\Test\Excess\Configuration;
+namespace Streamcommon\Test\Excess\Configuration;
 
 use PHPUnit\Framework\TestCase;
 use Streamcommon\Excess\Configuration\{Credential, Connection, DbConnection, AMQPConnection, AMQPConfiguration};
@@ -26,6 +26,8 @@ class ConfigurationTest extends TestCase
 {
     /**
      * Test credential options
+     *
+     * @return void
      */
     public function testCredentialWithArray(): void
     {
@@ -39,6 +41,8 @@ class ConfigurationTest extends TestCase
 
     /**
      * Test connection options
+     *
+     * @return void
      */
     public function testConnectionWithArray(): void
     {
@@ -52,14 +56,16 @@ class ConfigurationTest extends TestCase
 
     /**
      * Test DbConnection options
+     *
+     * @return void
      */
     public function testDbConnectionWithArray(): void
     {
         $options = new DbConnection([
-            'host' => 'localhost',
-            'port' => 8080,
-            'db_name' => 'test',
-            'user' => 'test',
+            'host'     => 'localhost',
+            'port'     => 8080,
+            'db_name'  => 'test',
+            'user'     => 'test',
             'password' => 'test'
         ]);
         $this->assertEquals('localhost', $options->getHost());
@@ -71,15 +77,17 @@ class ConfigurationTest extends TestCase
 
     /**
      * Test AMQPConnection options
+     *
+     * @return void
      */
-    public function testAMQPConnectionWithArray(): void
+    public function testAmqpConnectionWithArray(): void
     {
         $options = new AMQPConnection([
-            'host' => 'localhost',
-            'port' => 5672,
-            'login' => 'test',
+            'host'     => 'localhost',
+            'port'     => 5672,
+            'login'    => 'test',
             'password' => 'test',
-            'vhost' => '/'
+            'vhost'    => '/'
         ]);
         $this->assertEquals('localhost', $options->getHost());
         $this->assertEquals(5672, $options->getPort());
@@ -90,21 +98,23 @@ class ConfigurationTest extends TestCase
 
     /**
      *  Test AMQPConfiguration options
+     *
+     * @return void
      */
-    public function testAMQPConfigurationWithArray(): void
+    public function testAmqpConfigurationWithArray(): void
     {
         $options = new AMQPConfiguration([
-            'queue' => 'queue.1',
-            'exchange' => 'exchange.1',
+            'queue'        => 'queue.1',
+            'exchange'     => 'exchange.1',
             'routing_keys' => [
                 'routing.1'
             ],
-            'connection' => [
-                'host' => 'localhost',
-                'port' => 5672,
-                'login' => 'test',
+            'connection'   => [
+                'host'     => 'localhost',
+                'port'     => 5672,
+                'login'    => 'test',
                 'password' => 'test',
-                'vhost' => '/'
+                'vhost'    => '/'
             ],
         ]);
         $this->assertEquals('queue.1', $options->getQueue());

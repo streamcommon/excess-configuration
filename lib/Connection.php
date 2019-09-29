@@ -1,8 +1,8 @@
 <?php
 /**
- * This file is part of the Common package, a StreamCommon open software project.
+ * This file is part of the streamcommon/excess-configuration package, a StreamCommon open software project.
  *
- * @copyright (c) 2019 StreamCommon Team.
+ * @copyright (c) 2019 StreamCommon Team
  * @see https://github.com/streamcommon/excess-configuration
  *
  * For the full copyright and license information, please view the LICENSE
@@ -52,7 +52,7 @@ class Connection extends AbstractOptions
     /**
      * Get port
      *
-     * @return int|null
+     * @return integer|null
      */
     public function getPort(): ?int
     {
@@ -62,7 +62,7 @@ class Connection extends AbstractOptions
     /**
      * Set port
      *
-     * @param int|null $port
+     * @param integer|null $port
      * @return Connection
      */
     public function setPort(?int $port): Connection
