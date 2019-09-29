@@ -10,6 +10,9 @@
     "zend options",
     "excess configuration"
   ],
+  "config": {
+    "optimize-autoloader": true
+  },
   "require": {
     "php": "^7.3",
     "zendframework/zend-stdlib": "^3.2.1"
