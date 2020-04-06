@@ -14,7 +14,13 @@ declare(strict_types=1);
 namespace Streamcommon\Excess\Configuration;
 
 use Streamcommon\Excess\Configuration\Exception\{InvalidArgumentException};
-use Zend\Stdlib\AbstractOptions;
+use Laminas\Stdlib\AbstractOptions;
+
+use function is_array;
+use function sprintf;
+use function is_object;
+use function get_class;
+use function gettype;
 
 /**
  * Class AMQPConfiguration
@@ -27,7 +33,7 @@ class AMQPConfiguration extends AbstractOptions
     protected $queue;
     /** @var string|null */
     protected $exchange;
-    /** @var array */
+    /** @var array<string> */
     protected $routingKeys = [];
     /** @var AMQPConnection */
     protected $connection;
@@ -35,7 +41,7 @@ class AMQPConfiguration extends AbstractOptions
     /**
      * AMQPConfiguration constructor.
      *
-     * @param array|\Traversable|null $options
+     * @param array<mixed>|\Traversable<mixed>|null $options
      */
     public function __construct($options = null)
     {
@@ -90,7 +96,7 @@ class AMQPConfiguration extends AbstractOptions
     /**
      * Get routingKeys
      *
-     * @return array
+     * @return array<string>
      */
     public function getRoutingKeys(): array
     {
@@ -100,7 +106,7 @@ class AMQPConfiguration extends AbstractOptions
     /**
      * Set routingKeys
      *
-     * @param array $routingKeys
+     * @param array<string> $routingKeys
      * @return AMQPConfiguration
      */
     public function setRoutingKeys(array $routingKeys): AMQPConfiguration

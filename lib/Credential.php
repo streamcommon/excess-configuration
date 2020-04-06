@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Streamcommon\Excess\Configuration;
 
-use Zend\Stdlib\AbstractOptions;
+use Laminas\Stdlib\AbstractOptions;
 
 /**
  * Class Credential

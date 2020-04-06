@@ -7,7 +7,7 @@
     "streamcommon",
     "object based configuration",
     "object parameter",
-    "zend options",
+    "laminas options",
     "excess configuration"
   ],
   "config": {
@@ -15,14 +15,14 @@
   },
   "require": {
     "php": "^7.3",
-    "zendframework/zend-stdlib": "^3.2.1"
+    "laminas/laminas-stdlib": "^3.2.1"
   },
   "require-dev": {
     "streamcommon/coding-standard": "dev-master",
     "roave/security-advisories": "dev-master",
     "malukenho/docheader": "^0.1.7",
-    "phpstan/phpstan": "^0.11.1",
-    "phpunit/phpunit": "^8.0",
+    "phpstan/phpstan": "^0.12.18",
+    "phpunit/phpunit": "^9.1.1",
     "php-coveralls/php-coveralls": "^2.1.0"
   },
   "autoload": {
